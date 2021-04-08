@@ -2,6 +2,7 @@
   <div class="hello" >
     <h1>{{ msg }}</h1>
     <div id="main" style="width: 600px; height: 400px"></div>
+    
   </div>
 </template>
 
@@ -14,6 +15,9 @@ export default {
     msg: String,
   },
   mounted() {
+
+      
+
     console.log(echarts, "ssss");
     // 基于准备好的dom，初始化echarts实例
     var myChart = echarts.init(document.getElementById("main"));
